@@ -69,30 +69,69 @@
 
 .footer {
     grid-area: footer;
-    display: grid;
-    justify-self: center;
-    align-self: end;
+    font-size: 12px;
+    padding: 50px 0;
     width: 100%;
-    height: 200px;
+    z-index: 1;
     background-color: #5AB9EA;
 }
-.footer-section {
-    color: #ffffff;
-    margin-top: 2vh;
+.footer-nav {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
 }
-#footer-section-1 {
-    grid-area: footer-section-1;
+.footer-intro {
+    border-bottom: 1px solid #ffffff;
+    clear: both;
+    margin-bottom: 7px;
+    padding-bottom: 5px;
 }
-#footer-section-2 {
-    grid-area: footer-section-2;
-    
+.footer-col {
+    float: left;
+    line-height: 25px;
 }
-#footer-section-3 {
-    grid-area: footer-section-3;
+.footer-logo {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 7px;
+}
+.footer-slogan {
+    line-height: 25px;
+    margin: 0 0 35px;
+    width: 140px;
+}
+.footer-col-wrapper {
+
+}
+.footer-col-title {
+    margin-bottom: 4px;
+    margin-top: 35px;
+    font-weight: 400;
+}
+.footer-link {
+    display: block;
+    transition: color .75s ease;
+}
+.footer-address {
+    font-size: 1em;
+    line-height: 25px;
+}
+.footer-address-row {
+    display: block;
+}
+.footer-legal {
+    border-top: 1px solid #ffffff;
+    clear: both;
+    display: block;
+    float: left;
+    font-size: 12px;
+    line-height: 25px;
+    margin-top: 45px;
+    padding-top: 43px;
+    width: 100%;
 }
 
-
-@media only screen and (min-device-width : 1000px) {
+@media only screen and (min-width : 480px) {
     .body-container {
         grid-template-areas: 
             'header header header header header' 
@@ -103,20 +142,13 @@
         grid-template-areas: 
             'footer-section-1 footer-section-2 footer-section-3';
     }
-    #footer-section-2 {
-        padding-left: 2vw;
-        text-align: left;
-        border-left-style: solid;
-        border-left-width: 1px;
-        border-left-color: white;
-        border-right-style: solid;
-        border-right-width: 1px;
-        border-right-color: white;
+    .footer-col {
+        width: 33.333%
     }
 }
 
 
-@media only screen and (max-device-width : 999px) {
+@media only screen and (max-width : 479px) {
     .body-container {
         grid-template-areas: 
             'header header header header header' 
@@ -130,4 +162,8 @@
             'footer-section-2'
             'footer-section-3';
     }
+    .footer-col {
+        width: 50%;
+    }
+}
 }
