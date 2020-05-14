@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Pure Fitness</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+
+<body class="body-container">
+
+    <header class="header">
+        <partial name="_header" />
+    </header>
+
+    <div class="menu">
+        <partial name="_menu"/>
+    </div>
+
+    <main role="main" class="content">
+        @RenderBody()
+    </main>
+
+    <footer class="footer">
+        <partial name="_footer"/>
+    </footer>
+
+    <!-- Render Scripts-->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
