@@ -30,16 +30,18 @@
     color: #ffffff;
 }
 
-#header-links {
+.header-links {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     margin-left: auto;
+
 }
 .link {
     margin-top: 25px;
     margin-right: 25px;
     color: white;
+    transition: color .75s ease;
 }
 
 .menu {
@@ -121,14 +123,15 @@
     display: block;
     transition: color .75s ease;
 }
-.footer-link:hover, 
-,footer-link:focus {
-    color: Menu;
+.footer-link:hover, .footer-address:hover, .link:hover {
+    color: aquamarine;
 }
+
 .footer-address {
     color: #ffffff;
     font-size: 1em;
     line-height: 25px;
+    transition: color .75s ease;
 }
 .footer-address-row {
     display: block;
