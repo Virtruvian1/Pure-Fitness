@@ -6,8 +6,7 @@
     display: grid;
     height: 100vh;
     grid-gap: 0;
-    
-    background: linear-gradient(to right, #84CEEB, #C1C8E4);
+    background: linear-gradient(to right, #66CCFF, #CCCCFF);
 }
 
 .header {
@@ -46,11 +45,11 @@
 
 .menu {
     grid-area: menu;
-    display:flex;
+    display: flex;
     justify-self: start;
     height: 75vh;
     width: 100px;
-    background-color: #84CEEB;
+    background-color: #66CCFF;
 }
 #icon-container {
     align-self: flex-end;
