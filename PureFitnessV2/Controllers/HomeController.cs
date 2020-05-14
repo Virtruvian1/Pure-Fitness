@@ -45,7 +45,7 @@ namespace PureFitnessV2.Controllers
         }
 
         [HttpPost]
-        public IActionResult CreateProfile(CreateProfileModel createProfile)
+        public IActionResult CreateProfile(SignUp createProfile)
         {
             return View();
         }

@@ -1,9 +1,10 @@
-﻿using System;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace PureFitnessV2.Models
 {
-    public class CreateProfileModel
+
+    public class SignUp
     {
         [Display(Name = "First Name")]
         [Required(ErrorMessage = "You must provide a first name.")]
