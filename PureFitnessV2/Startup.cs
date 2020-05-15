@@ -27,9 +27,6 @@ namespace PureFitnessV2
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-
-            var connection = @"Server=(localdb)\mssqllocaldb;Database=EFGetStarted.AspNetCore.NewDb;Trusted_Connection=True;";
-            services.AddDbContext<SignUpContent>(options => options.UseSqlServer(connection));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
